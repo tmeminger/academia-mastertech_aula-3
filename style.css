@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    font-size: 18px;
+    display: grid;
+    grid-template-areas:'header header header header'
+                        'nav nav nav nav' 
+                        'section section section aside'
+                        'batata batata batata batata'
+                        'footer footer footer footer';
+grid-template-rows: 10vh 15vh 60vh 60vh 30vh;
+grid-template-columns: 24vw 24vw 24vw 26.5vw;
+}
+
+nav{
+    grid-area: nav;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    font-size: 25px;
+    text-decoration: none;
+    color: magenta;
+    padding: 10px;
+}
+
+header{
+    grid-area: header;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: flex-start;
+}
+
+header img{
+    height: 100%;
+    border-radius: 40px;
+    
+}
+
+section{
+grid-area: section;
+background-color: brown;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+section iframe{
+    width: 100%;
+}
+
+.batata{
+    grid-area: batata;
+    background-image: url("img/neymarfantasy.jpg");
+
+}
+
+.fake p{
+    font-size: 3.2rem;
+}
+
+footer{
+grid-area: footer;
+background-color: black;
+}
+
+
+aside{
+    grid-area: aside;
+    background-color: yellow;
+}
+
+.teste-2{
+    font-size: 1.2rem;
+
+}
+
+.teste-3{
+    font-size: 1.2rem;
+}
